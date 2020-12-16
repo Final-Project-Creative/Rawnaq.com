@@ -6,6 +6,7 @@ const ProductList = props => {
     const { products } = props.context;
 
     return ( 
+
         <>
             <div className="hero is-primary">
                 <div className="hero-body container">

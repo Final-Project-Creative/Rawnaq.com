@@ -2,6 +2,7 @@ import React from "react";
 import withContext from "../withContext";
 import CartItem from "./CartItem";
 import StripeCheckoutButton from './stripe/stripe';
+
 const Cart = props => {
     const { cart } = props.context;
     const cartKeys = Object.keys(cart || {});
@@ -49,6 +50,7 @@ const Cart = props => {
                     )}
             </div>
             <StripeCheckoutButton/>
+
         </>
     );
 };
