@@ -97,7 +97,7 @@ import Login from './Component/Login';
 import ProductList from './Component/ProductList';
 
 import Context from "./Context";
-
+// import StripeCheckoutButton from './Component/stripe/stripe';
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -282,6 +282,7 @@ export default class App extends Component {
               <Route exact path="/add-product" component={AddProduct} />
               <Route exact path="/products" component={ProductList} />
             </Switch>
+            {/* <StripeCheckoutButton/> */}
           </div>
         </Router>
       </Context.Provider>
